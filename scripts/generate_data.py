@@ -126,31 +126,31 @@ if __name__ == '__main__':
     print("Saving data to CSV files...\n")
     
     save_to_csv(
-        'customers.csv',
+        'data/customers.csv',
         customers,
         ['customer_id', 'first_name', 'last_name', 'email', 'phone', 'country', 'city', 'address', 'created_at']
     )
     
     save_to_csv(
-        'products.csv',
+        'data/products.csv',
         products,
         ['product_id', 'product_name', 'category', 'description', 'price', 'stock', 'created_at']
     )
     
     save_to_csv(
-        'orders.csv',
+        'data/orders.csv',
         orders,
         ['order_id', 'customer_id', 'order_date', 'status', 'total_amount', 'shipping_address']
     )
     
     save_to_csv(
-        'order_items.csv',
+        'data/order_items.csv',
         order_items,
         ['order_item_id', 'order_id', 'product_id', 'quantity', 'unit_price', 'subtotal']
     )
     
     save_to_csv(
-        'payments.csv',
+        'data/payments.csv',
         payments,
         ['payment_id', 'order_id', 'payment_method', 'amount', 'payment_date', 'status', 'transaction_id']
     )
